@@ -1,11 +1,14 @@
 import './App.css'
-import Conditional from './components/Conditional'
+import ListArray from './components/list/ListArray'
 
 function App() {
+    const myItems = ['React', 'Vue', 'Angular']
+
     return (
         <div className="App">
             <h1>Arrays Rendering</h1>
-            <Conditional />
+            <ListArray items={myItems} />
+            <ListArray items={[]} />
         </div>
     )
 }
