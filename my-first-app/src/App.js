@@ -1,28 +1,14 @@
 import './App.css';
-import HelloWorld from './components/HelloWorld';
+import SayMyName from './components/SayMyName';
+import People from './components/People';
 
 function App() {
 
-  const name = 'João Flávio'
-
-  const nameUpercase =  name.toUpperCase()
-
-  function sumFunction(a, b) {
-    return a + b
-  }
-
-  const url = 'https://via.placeholder.com/150'
-
   return (
     <div className="App">
-      <h1>Hello React!</h1>
-      <p>My First React App</p>
-      <p>Author: { name } | { nameUpercase }</p>
-      <p>Sum: { 2 + 2 } | { sumFunction(2, 2) }</p>
-      <img src={url} alt="placeholder" />
-      <div>
-        <HelloWorld />
-      </div>
+      <SayMyName name="João" />
+      <SayMyName name="Matheus" />
+      <People name="João Flávio Santos" age="28" occupation="Full Stack Developer" picture="https://avatars.githubusercontent.com/u/80658056?v=4" />
     </div>
   );
 }
