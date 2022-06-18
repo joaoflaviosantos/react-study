@@ -2,6 +2,7 @@ import './App.css';
 import SayMyName from './components/SayMyName';
 import People from './components/People';
 import Sentence from './components/Sentence';
+import List from './components/List';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <People name="João Flávio Santos" age="28" occupation="Full Stack Developer" picture="https://avatars.githubusercontent.com/u/80658056?v=4" />
       <Sentence />
       <Sentence />
+      <List />
     </div>
   );
 }
