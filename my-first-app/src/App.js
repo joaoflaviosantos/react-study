@@ -1,4 +1,5 @@
 import './App.css';
+import HelloWorld from './components/HelloWorld';
 
 function App() {
 
@@ -19,6 +20,9 @@ function App() {
       <p>Author: { name } | { nameUpercase }</p>
       <p>Sum: { 2 + 2 } | { sumFunction(2, 2) }</p>
       <img src={url} alt="placeholder" />
+      <div>
+        <HelloWorld />
+      </div>
     </div>
   );
 }
