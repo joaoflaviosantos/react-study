@@ -1,0 +1,30 @@
+.conditionalContainer {
+    margin: 2rem;
+    padding: 2rem;
+    background-color: rgb(50, 254, 203);
+    border: 1px solid rgb(57, 121, 93);
+}
+
+.conditionalContainerResult {
+    color: aliceblue;
+    margin: 2rem;
+    padding: 4rem;
+    background-color: rgb(255, 64, 30);
+    border: 1px solid rgb(57, 121, 93);
+}
+
+.conditionalInput{
+    font-size: large;
+    margin: 6px;
+    padding: 0.25rem;
+    color: #1f1f1f;
+    --background-color: rgb(254, 138, 138);
+}
+
+.conditionalButton{
+    font-size: large;
+    margin: 6px;
+    padding: 0.5rem;
+    color: #1f1f1f;
+    --background-color: rgb(254, 138, 138);
+}
