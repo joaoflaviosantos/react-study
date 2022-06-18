@@ -1,8 +1,10 @@
+import styles from './Sentence.module.css'
+
 function Sentence () {
     
     return (
-        <div>
-            <p>This is a React Component with one sentence.</p>
+        <div className={ styles.sentenceContainer }>
+            <p className={ styles.sentenceContent }>This is a React Component with one sentence.</p>
         </div>
     );
 }
