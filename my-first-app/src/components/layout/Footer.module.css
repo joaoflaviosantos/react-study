@@ -1,9 +1,27 @@
+.container {
+    background-color: #0b0b19;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 2rem;
+}
+
 .list {
+    padding: 1rem;
+    color: rgb(255, 255, 255);
     display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
 }
 
 .item {
-    font-size: large;
-    margin-right: 1em;
+    font-size:x-large;
+    color: rgb(255, 255, 255);
+    margin: 0 1em;
+}
+
+.item_svg {
+    font-size:x-large;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
 }

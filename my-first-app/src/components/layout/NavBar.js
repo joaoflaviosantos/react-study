@@ -3,17 +3,25 @@ import styles from './NavBar.module.css'
 
 function NavBar() {
     return (
-        <ul className={styles.list}>
-            <li className={styles.item}>
-                <Link to="/">Home</Link>
-            </li>
-            <li className={styles.item}>
-                <Link to="/company">Company</Link>
-            </li>
-            <li className={styles.item}>
-                <Link to="/contact">Contact</Link>
-            </li>
-        </ul>
+        <div className={styles.container}>
+            <ul className={styles.list}>
+                <li>
+                    <Link className={styles.item} to="/">
+                        Home
+                    </Link>
+                </li>
+                <li>
+                    <Link className={styles.item} to="/company">
+                        Company
+                    </Link>
+                </li>
+                <li>
+                    <Link className={styles.item} to="/contact">
+                        Contact
+                    </Link>
+                </li>
+            </ul>
+        </div>
     )
 }
 

@@ -1,9 +1,18 @@
+.container {
+    background-color: #0b0b19;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 2rem;
+}
+
 .list {
+    padding: 1rem;
     display: flex;
     list-style: none;
 }
 
 .item {
+    color: rgb(255, 255, 255);
     font-size: large;
     margin-right: 1em;
 }
