@@ -1,7 +1,6 @@
-import ListItem from "./ListItem";
+import ListItem from './ListItem'
 
 function List() {
-    
     return (
         <>
             <h1>My List</h1>
@@ -12,7 +11,7 @@ function List() {
                 <ListItem />
             </ul>
         </>
-    );
+    )
 }
 
-export default List;
+export default List

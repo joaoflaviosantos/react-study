@@ -1,17 +1,18 @@
 import PropTypes from 'prop-types'
 
-function ListItem({brand, year_launch}) {
-
+function ListItem({ brand, year_launch }) {
     return (
         <>
-            <li>{ brand } - { year_launch }</li>
+            <li>
+                {brand} - {year_launch}
+            </li>
         </>
-    );
+    )
 }
 
 ListItem.propTypes = {
     brand: PropTypes.string.isRequired,
-    year_launch: PropTypes.number.isRequired,  
+    year_launch: PropTypes.number.isRequired,
 }
 
 ListItem.defaultProps = {
@@ -19,4 +20,4 @@ ListItem.defaultProps = {
     year_launch: Number(0),
 }
 
-export default ListItem;
+export default ListItem

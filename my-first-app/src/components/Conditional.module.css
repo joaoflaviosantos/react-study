@@ -13,7 +13,7 @@
     border: 1px solid rgb(57, 121, 93);
 }
 
-.conditionalInput{
+.conditionalInput {
     font-size: large;
     margin: 6px;
     padding: 0.25rem;
@@ -21,7 +21,7 @@
     --background-color: rgb(254, 138, 138);
 }
 
-.conditionalButton{
+.conditionalButton {
     font-size: large;
     margin: 6px;
     padding: 0.5rem;

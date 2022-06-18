@@ -1,6 +1,5 @@
 function Button(props) {
-    
-    return <button onClick={props.event}>{ props.text }</button>
+    return <button onClick={props.event}>{props.text}</button>
 
     /*
     return (
@@ -9,4 +8,4 @@ function Button(props) {
     */
 }
 
-export default Button;
+export default Button
