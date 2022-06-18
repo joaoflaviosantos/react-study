@@ -5,7 +5,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Conditional Rendering</h1>
+      <h1>Arrays Rendering</h1>
       <Conditional />
     </div>
   );
