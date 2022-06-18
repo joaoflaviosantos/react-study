@@ -1,14 +1,16 @@
 import './App.css'
-import ListArray from './components/list/ListArray'
+import { useState } from 'react'
+import YourName from './components/YourName'
+import Welcome from './components/Welcome'
 
 function App() {
-    const myItems = ['React', 'Vue', 'Angular']
+    const [name, setName] = useState('')
 
     return (
         <div className="App">
-            <h1>Arrays Rendering</h1>
-            <ListArray items={myItems} />
-            <ListArray items={[]} />
+            <h1>State Lift</h1>
+            <YourName setName={setName} />
+            <Welcome name={name} />
         </div>
     )
 }
