@@ -1,13 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
 import App from './App'
+
+import { ConfigProvider } from 'antd'
+import ptBR from 'antd/lib/locale/pt_BR'
+import 'antd/dist/antd.min.css' // https://github.com/ant-design/ant-design/issues/33327#issuecomment-997355323
+
 // import reportWebVitals from './reportWebVitals'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
     <React.StrictMode>
-        <App />
+        <ConfigProvider locale={ptBR}>
+            <App />
+        </ConfigProvider>
     </React.StrictMode>
 )
 

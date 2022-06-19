@@ -1,0 +1,17 @@
+.site-layout .site-layout-background {
+    background: #fff;
+}
+
+.logo {
+    height: 64px;
+    margin: 15px 0px 15px 0px;
+    --background: rgba(255, 255, 255, 0.3);
+    background-image: url('./img/costs_logo.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+.themes-witch {
+    margin-right: 20px;
+    padding: 20px;
+}
