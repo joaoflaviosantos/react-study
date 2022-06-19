@@ -1,7 +1,7 @@
 import '../../App.css'
 function Company() {
     return (
-        <div class="App">
+        <div className="App">
             <h1>Company</h1>
             <p>Company page content...</p>
         </div>

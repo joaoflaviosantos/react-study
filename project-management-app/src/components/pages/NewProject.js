@@ -1,7 +1,7 @@
 import '../../App.css'
 function NewProject() {
     return (
-        <div class="App">
+        <div className="App">
             <h1>New Project</h1>
             <p>Creat a new project...</p>
         </div>

@@ -1,7 +1,7 @@
 import '../../App.css'
 function Contact() {
     return (
-        <div class="App">
+        <div className="App">
             <h1>Contact</h1>
             <p>Contact page content...</p>
         </div>
