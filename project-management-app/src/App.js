@@ -1,122 +1,30 @@
-import {
-    FileOutlined,
-    PieChartOutlined,
-    UserOutlined,
-    DesktopOutlined,
-    TeamOutlined,
-} from '@ant-design/icons'
-import './App.css'
-import { Breadcrumb, Layout, Menu, Switch, Col, Row } from 'antd'
-import { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import Home from './components/pages/Home'
+import Company from './components/pages/Company'
+import NewProject from './components/pages/NewProject'
+import Contact from './components/pages/Contact'
 
-import AntDesignFormExemple from './components/antd-exemples/AntDesignFormExemple'
+import Container from './components/layouts/Container'
 
-const { Header, Content, Footer, Sider } = Layout
-
-function getItem(label, key, icon, children) {
-    return {
-        key,
-        icon,
-        children,
-        label,
-    }
-}
-
-const items = [
-    getItem('Option 1', '1', <PieChartOutlined />),
-    getItem('Option 2', '2', <DesktopOutlined />),
-    getItem('User', 'sub1', <UserOutlined />, [
-        getItem('Tom', '3'),
-        getItem('Bill', '4'),
-        getItem('Alex', '5'),
-    ]),
-    getItem('Team', 'sub2', <TeamOutlined />, [
-        getItem('Team 1', '6'),
-        getItem('Team 2', '8'),
-    ]),
-    getItem('Files', '9', <FileOutlined />),
-]
-
-function App() {
-    const [theme, setTheme] = useState('dark')
-    const [collapsed, setCollapsed] = useState(false)
-
-    const changeTheme = (value) => {
-        setTheme(value ? 'dark' : 'light')
-    }
-
+// https://stackoverflow.com/questions/63124161/attempted-import-error-switch-is-not-exported-from-react-router-dom
+export default function App() {
     return (
-        <Layout
-            style={{
-                minHeight: '100vh',
-            }}
-        >
-            <Sider
-                collapsible
-                theme={theme}
-                collapsed={collapsed}
-                onCollapse={(value) => setCollapsed(value)}
-            >
-                <div className="logo" />
-                <Menu
-                    theme={theme}
-                    defaultSelectedKeys={['1']}
-                    mode="inline"
-                    items={items}
-                />
-            </Sider>
-            <Layout className="site-layout">
-                <Header
-                    className="site-layout-background"
-                    style={{
-                        padding: 0,
-                    }}
-                >
-                    <Row justify="end" align="middle">
-                        <Col span={1}>
-                            <Switch
-                                className="theme-switch"
-                                checked={theme === 'dark'}
-                                onChange={changeTheme}
-                                checkedChildren="Dark"
-                                unCheckedChildren="Light"
-                            />
-                        </Col>
-                    </Row>
-                </Header>
-                <Content
-                    style={{
-                        margin: '0 16px',
-                    }}
-                >
-                    <Breadcrumb
-                        style={{
-                            margin: '16px 0',
-                        }}
-                    >
-                        <Breadcrumb.Item>User</Breadcrumb.Item>
-                        <Breadcrumb.Item>Bill</Breadcrumb.Item>
-                    </Breadcrumb>
-                    <div
-                        className="site-layout-background"
-                        style={{
-                            padding: 24,
-                            minHeight: 360,
-                        }}
-                    >
-                        <AntDesignFormExemple />
-                    </div>
-                </Content>
-                <Footer
-                    style={{
-                        textAlign: 'center',
-                    }}
-                >
-                    Ant Design ©2018 Created by Ant UED
-                </Footer>
-            </Layout>
-        </Layout>
+        <Router>
+            <div>
+                <Link to="/">Home</Link>
+                <Link to="/company">Company</Link>
+                <Link to="/newproject">New Project</Link>
+                <Link to="/contact">Contact</Link>
+            </div>
+            <Container customClass="min-height">
+                <Routes>
+                    <Route exact path="/" element={<Home />} />
+                    <Route path="/company" element={<Company />} />
+                    <Route path="/newproject" element={<NewProject />} />
+                    <Route path="/contact" element={<Contact />} />
+                </Routes>
+            </Container>
+            <p>Footer</p>
+        </Router>
     )
 }
-
-export default App
