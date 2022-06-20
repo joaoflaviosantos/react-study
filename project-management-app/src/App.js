@@ -46,7 +46,12 @@ export default function App() {
                     />
                 </Header>
 
-                <Content style={{ padding: '0 50px' }}>
+                <Content
+                    style={{
+                        padding: '10px 50px 50px 50px',
+                        minHeight: 'calc(100vh - 70px)',
+                    }}
+                >
                     <Routes>
                         <Route exact path="/" element={<Home />} />
                         <Route path="/projects" element={<Projects />} />
@@ -56,7 +61,20 @@ export default function App() {
                     </Routes>
                 </Content>
 
-                <Footer style={{ textAlign: 'center' }}>
+                {
+                    // https://thewebdev.info/2021/10/03/how-to-keep-the-page-footer-at-the-bottom-of-the-page-with-react/
+                }
+                <Footer
+                    style={{
+                        textAlign: 'center',
+                        position: 'fixed',
+                        left: 0,
+                        bottom: 0,
+                        right: 0,
+                        backgroundColor: '#001529',
+                        color: '#fff',
+                    }}
+                >
                     <span>Costs</span> &copy; 2022
                 </Footer>
             </Layout>
