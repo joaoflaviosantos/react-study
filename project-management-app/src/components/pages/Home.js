@@ -1,15 +1,18 @@
-import styles from '../../App.module.css'
+import styles from './Home.module.css'
 
-import BreadcrumbElement from '../elements/BreadcrumbElement'
+import LinkButton from '../elements/LinkButton'
+
+import savings from '../../img/savings.svg'
 
 export default function Home() {
     return (
-        <>
-            <BreadcrumbElement first="Home" />
-            <div className={styles.site_layout_content}>
-                <h1>Home</h1>
-                <p>Home page content...</p>
-            </div>
-        </>
+        <section className={styles.home_container}>
+            <h1>
+                Welcome to <span>Costs!</span>
+            </h1>
+            <p>Start managing your projects right now!</p>
+            <LinkButton text="Create a project" to="/newproject" />
+            <img src={savings} alt="Costs" />
+        </section>
     )
 }
