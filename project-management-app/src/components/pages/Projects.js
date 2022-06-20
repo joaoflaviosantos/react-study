@@ -1,9 +1,15 @@
-import '../../App.css'
+import styles from '../../App.module.css'
+
+import BreadcrumbElement from '../elements/BreadcrumbElement'
+
 export default function Projects() {
     return (
-        <div className="App">
-            <h1>Projects</h1>
-            <p>Created projects...</p>
-        </div>
+        <>
+            <BreadcrumbElement first="Projects" />
+            <div className={styles.site_layout_content}>
+                <h1>Projects</h1>
+                <p>Created projects...</p>
+            </div>
+        </>
     )
 }

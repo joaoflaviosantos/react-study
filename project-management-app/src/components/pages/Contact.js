@@ -1,11 +1,17 @@
-import '../../App.css'
-function Contact() {
+import styles from '../../App.module.css'
+
+import BreadcrumbElement from '../elements/BreadcrumbElement'
+
+import AntDesignFormExemple from '../antd-exemples/AntDesignFormExemple'
+
+export default function Contact() {
     return (
-        <div className="App">
-            <h1>Contact</h1>
-            <p>Contact page content...</p>
-        </div>
+        <>
+            <BreadcrumbElement first="Contact" />
+            <div className={styles.site_layout_content}>
+                <h1>Contact</h1>
+                <AntDesignFormExemple />
+            </div>
+        </>
     )
 }
-
-export default Contact

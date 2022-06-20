@@ -1,0 +1,25 @@
+.main_layout {
+    padding: 0;
+    margin: 0;
+}
+
+.site_layout_content {
+    min-height: 280px;
+    padding: 24px;
+    background: #fff;
+}
+
+.logo {
+    float: left;
+    height: 64px;
+    width: 64px;
+    margin: 0px 25px 0px 0px;
+    background-image: url('./img/costs_logo.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 75%;
+}
+
+.logo:hover {
+    color: #ffbb33;
+}
