@@ -1,9 +1,10 @@
 import styles from './Home.module.css'
 
-import LinkButton from '../elements/LinkButton'
-import AntDesignTableExemple from '../antd-exemples/AntDesignTableExemple'
+import LinkButton from '../components/elements/LinkButton'
 
-import savings from '../../img/savings.svg'
+import AntDesignSteps from '../components/antd-exemples/AntDesignSteps'
+
+import savings from '../img/savings.svg'
 
 export default function Home() {
     return (
@@ -18,7 +19,7 @@ export default function Home() {
             </section>
 
             <section className={styles.home_container}>
-                <AntDesignTableExemple style={{ width: '100%' }} />
+                <AntDesignSteps />
             </section>
         </>
     )

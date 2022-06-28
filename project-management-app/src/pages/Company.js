@@ -1,6 +1,6 @@
-import styles from '../../App.module.css'
+import styles from '../App.module.css'
 
-import BreadcrumbElement from '../elements/BreadcrumbElement'
+import BreadcrumbElement from '../components/elements/BreadcrumbElement'
 
 export default function Company() {
     return (

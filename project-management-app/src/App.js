@@ -1,11 +1,11 @@
 import { Layout, Menu } from 'antd'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 
-import Home from './components/pages/Home'
-import Company from './components/pages/Company'
-import Projects from './components/pages/Projects'
-import NewProject from './components/pages/NewProject'
-import Contact from './components/pages/Contact'
+import Home from './pages/Home'
+import Company from './pages/Company'
+import Projects from './pages/Projects'
+import NewProject from './pages/NewProject'
+import Contact from './pages/Contact'
 
 import styles from './App.module.css'
 

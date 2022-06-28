@@ -1,8 +1,8 @@
-import styles from '../../App.module.css'
+import styles from '../App.module.css'
 
-import BreadcrumbElement from '../elements/BreadcrumbElement'
+import BreadcrumbElement from '../components/elements/BreadcrumbElement'
 
-import AntDesignFormExemple from '../antd-exemples/AntDesignFormExemple'
+import AntDesignFormExemple from '../components/antd-exemples/AntDesignFormExemple'
 
 export default function Contact() {
     return (
